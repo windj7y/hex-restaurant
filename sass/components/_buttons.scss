@@ -1,0 +1,50 @@
+.btn {
+  font-size: 14px;
+  padding: 6px 21px;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &-primary {
+    color: $white;
+    background: $primary;
+
+    &:hover {
+      background: lighten($primary, 10%);
+    }
+  }
+
+  &-info {
+    color: $white;
+    background: $info;
+    border-radius: 3px;
+
+    &:hover {
+      background: lighten($info, 20%);
+    }
+  }
+
+  &-light-black {
+    color: $white;
+    background: $light-black;
+    border-radius: 3px;
+
+    &:hover {
+      background: lighten($light-black, 20%);
+    }
+  }
+
+  &-outline {
+    &-orange {
+      color: $orange;
+      background: $secondary;
+      border: 2px solid $orange;
+      border-radius: 3px;
+
+      &:hover {
+        color: $white;
+        background: $orange;
+      }
+    }
+  }
+}

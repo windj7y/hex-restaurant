@@ -1,0 +1,54 @@
+$primary: #3D1101;
+$secondary: #EFE9E7;
+$light: rgba(#FAFAFA, 0.7);
+$info: #F56C23;
+$danger: #DB4437;
+$white: #fff;
+$black: #000;
+$light-blue: #41ABE1;
+$blue: #3A5795;
+$gray: #979797;
+$orange: #FF5E45;
+$light-primary: rgba($primary, 0.75);
+$light-black: rgba($black, 0.35);
+
+$font-size-base: 16px;
+$font-sizes: (
+  1: $font-size-base * 3,
+  2: $font-size-base * 2.25,
+  3: $font-size-base * 1.5,
+  4: $font-size-base * 1.25,
+  5: $font-size-base * 1.125,
+  6: $font-size-base,
+  7: $font-size-base * 0.875,
+  8: $font-size-base * 0.75,
+);
+
+$spacing: 16px;
+$spacings: (
+  0: 0,
+  1: $spacing * 0.5,
+  2: $spacing * 0.75,
+  3: $spacing,
+  4: $spacing * 1.25,  
+  5: $spacing * 1.5,
+  6: $spacing * 1.875,
+  7: $spacing * 2,
+  8: $spacing * 3.125,
+  9: $spacing * 5
+);
+
+$breakpoints: (
+  'md': 768px,
+  'sm': 576px
+);
+
+$grid-columns: (
+  3: 25%,
+  4: 33.33333%,
+  6: 50%,
+  8: 66.66667%,
+  9: 75%
+);
+
+$display: none, block, inline, flex;

@@ -1,0 +1,8 @@
+.card {
+  background: $secondary;
+  box-shadow: 3px 3px 4px 0 rgba($black, 0.16);
+
+  &-body {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,87 @@
+.link- {
+  &primary {
+    color: $primary;
+
+    &:hover {
+      color: lighten($primary, 20%);
+    }
+
+    &-bg {
+      color: $primary;
+
+      &:hover,
+      &.active {
+        color: $white;
+        background: $primary;
+      }
+    }
+  }
+
+  &white {
+    color: $white;
+
+    &:hover {
+      color: darken($white, 20%);
+    }
+  }
+
+  &danger {
+    color: $danger;
+
+    &:hover {
+      color: lighten($danger, 20%);
+    }
+  }
+
+  &light-blue {
+    color: $light-blue;
+
+    &:hover {
+      color: lighten($light-blue, 20%);
+    }
+  }
+
+  &blue {
+    color: $blue;
+
+    &:hover {
+      color: lighten($blue, 20%);
+    }
+  }
+}
+
+.bg- {
+  &primary {
+    background: $primary;
+  }
+
+  &secondary {
+    background: $secondary;
+  }
+
+  &light {
+    background: $light;
+  }
+
+  &orange {
+    background: $orange;
+  }
+}
+
+.text- {
+  &secondary {
+    color: $secondary;
+  }
+
+  &white {
+    color: $white;
+  }
+
+  &light-primary {
+    color: $light-primary;
+  }
+
+  &orange {
+    color: $orange;
+  }
+}

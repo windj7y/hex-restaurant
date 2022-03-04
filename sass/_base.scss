@@ -1,0 +1,30 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Microsoft JhengHei', Helvetica, sans-serif;
+  line-height: 1.5;
+  color: $primary;
+}
+
+.container {
+  max-width: 1024px;
+  padding: 0 42px;
+  margin: 0 auto;
+
+  @include md {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

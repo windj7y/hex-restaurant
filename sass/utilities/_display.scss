@@ -1,0 +1,15 @@
+@each $item in $display {
+  .d-#{$item} {
+    display: $item;
+  }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @include media-breakpoint($breakpoint) {
+    @each $item in $display {
+      .d-#{$name}-#{$item} {
+        display: $item;
+      }
+    }
+  }
+}

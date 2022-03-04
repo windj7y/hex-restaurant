@@ -1,0 +1,55 @@
+.title {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: $gray;
+    width: 118px;
+    height: 1px;
+
+    @include md {
+      width: 72px;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &::before {
+    left: 25%;
+  }
+
+  &::after {
+    right: 25%;
+  }
+}
+
+.chef-img {
+  display: block;
+  
+  @include md {
+    height: 460px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  @include sm {
+    margin: 0 auto;
+  }
+}
+
+.map-img {
+  display: block;
+
+  @include md {
+    height: 386px;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  @include sm {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,19 @@
+.banner {
+  height: 420px;
+  background: url('https://raw.githubusercontent.com/hexschool/course-css-weblayout/main/assets/header_desktop.png') no-repeat center #000;
+
+  &-content {
+    background: rgba($black, 0.35);
+    color: $white;
+    padding: 23px 32px;
+    text-align: center;
+  }
+
+  @include sm {
+    background: url('https://raw.githubusercontent.com/hexschool/course-css-weblayout/main/assets/header_mobile.png') center;
+
+    &-content {
+      padding: 20px 6px;
+    }
+  }
+}

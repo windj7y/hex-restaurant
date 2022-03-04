@@ -1,0 +1,34 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.contact- {
+  &item::before {
+    content: '•';
+    padding-right: 4px;
+  }
+}
+
+.footer-logo {
+  height: 49px;
+  background: url('https://raw.githubusercontent.com/hexschool/course-css-weblayout/4302179dc195437fdb523ccccf11440c3b5dedc8/assets/logo_l(null).svg') no-repeat right;
+  background-size: contain;
+  @include hide-text;
+}
+
+.top-link {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  padding: 5px 10px;
+  background: $info;
+  color: $white;
+}
+
+.top-link:hover {
+  background: lighten($info, 10%);
+}

@@ -1,0 +1,85 @@
+@each $item, $value in $spacings {
+  .p-#{$item} {
+    padding: $value;
+  }
+
+  .px-#{$item} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$item} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .pt-#{$item} {
+    padding-top: $value;
+  }
+  
+  .pr-#{$item} {
+    padding-right: $value;
+  }
+
+  .pb-#{$item} {
+    padding-bottom: $value;
+  }
+
+  .mx-#{$item} {
+    margin-right: $value;
+    margin-left: $value;
+  }
+
+  .mr-#{$item} {
+    margin-right: $value;
+  }
+
+  .mb-#{$item} {
+    margin-bottom: $value;
+  }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @include media-breakpoint($breakpoint) {
+    @each $item, $value in $spacings {
+      .p-#{$name}-#{$item} {
+        padding: $value;
+      }
+
+      .px-#{$name}-#{$item} {
+        padding-left: $value;
+        padding-right: $value;
+      }
+
+      .py-#{$name}-#{$item} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
+
+      .pt-#{$name}-#{$item} {
+        padding-top: $value;
+      }
+
+      .pr-#{$name}-#{$item} {
+        padding-right: $value;
+      }
+
+      .pb-#{$name}-#{$item} {
+        padding-bottom: $value;
+      }
+
+      .mx-#{$name}-#{$item} {
+        margin-right: $value;
+        margin-left: $value;
+      }
+
+      .mr-#{$name}-#{$item} {
+        margin-right: $value;
+      }
+
+      .mb-#{$name}-#{$item} {
+        margin-bottom: $value;
+      }
+    }
+  }
+}
